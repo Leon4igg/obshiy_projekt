@@ -80,6 +80,26 @@ def delen():
 
 tex1.clicked.connect(slozh)
 
+a.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+b.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+c.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+v.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+g.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+j.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+l.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+o.setStyleSheet('''QLineEdit{font-size:10px;
+background: yellow;}''')
+
+okno.setStyleSheet('''QWidget{background-image: url('aaaa.jpg');
+}''')
+
 #b1 = QPushButton(okno)
 #b1.setText('1')
 #b1.move(100,250)
