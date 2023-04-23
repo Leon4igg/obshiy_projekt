@@ -26,7 +26,7 @@ v.move(250,300)
 tex2 = QLabel(okno)
 tex2.setText('-')
 tex2.move(210,302)
-tex3 = QLabel(okno)
+tex3 = QPushButton(okno)
 tex3.setText('=')
 tex3.move(400,302)
 
@@ -38,7 +38,7 @@ j.move(250,400)
 tex4 = QLabel(okno)
 tex4.setText('*')
 tex4.move(210,405)
-tex5 = QLabel(okno)
+tex5 = QPushButton(okno)
 tex5.setText('=')
 tex5.move(400,402)
 
@@ -50,16 +50,33 @@ o.move(250,500)
 tex7 = QLabel(okno)
 tex7.setText('/')
 tex7.move(210,505)
-tex8 = QLabel(okno)
+tex8 = QPushButton(okno)
 tex8.setText('=')
 tex8.move(400,502)
 
 def slozh():
     ch1=int(a.text())
     ch2=int(b.text())
-    res=ch1+ch2
-    tex1.setText(str(res))
+    res1=ch1+ch2
+    tex1.setText(str(res1))
 
+def vichit():
+    ch3=int(c.text())
+    ch4=int(v.text())
+    res2=ch3-ch4
+    tex3.setText(str(res2))
+
+def umn():
+    ch5=int(g.text())
+    ch6=int(j.text())
+    res3=ch5*ch6
+    tex5.setText(str(res3))
+
+def delen():
+    ch7=int(l.text())
+    ch8=int(o.text())
+    res4=ch7/ch8
+    tex8.setText(str(res4))
 
 tex1.clicked.connect(slozh)
 
