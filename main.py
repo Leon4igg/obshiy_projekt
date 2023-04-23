@@ -79,6 +79,9 @@ def delen():
     tex8.setText(str(res4))
 
 tex1.clicked.connect(slozh)
+tex3.clicked.connect(vichit)
+tex5.clicked.connect(umn)
+tex8.clicked.connect(delen)
 
 a.setStyleSheet('''QLineEdit{font-size:10px;
 background: yellow;}''')
